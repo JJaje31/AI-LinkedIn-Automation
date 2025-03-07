@@ -13,7 +13,7 @@ const Nav: React.FC = () => {
 
   return (
     <nav className="bg-gradient-to-br from-[#0f0f0f] via-[#181818] to-[#232323] border-b border-gray-700 h-20 flex items-center">
-      {/* 🔹 Logo */}
+    
       <div className="flex items-center px-2">
         <NavLink to="/">
           <img
@@ -68,7 +68,7 @@ const Nav: React.FC = () => {
 
         {/* 🟢 Mobile Dropdown Menu */}
         {isOpen && (
-          <ul className="absolute right-1 top-19 mt-2 w-40 bg-gray-800 text-white shadow-lg rounded-lg overflow-hidden transition-all duration-200 ease-in-out">
+          <ul className="z-50 absolute right-1 top-19 mt-2 w-40 bg-gray-800 text-white shadow-lg rounded-lg overflow-hidden transition-all duration-200 ease-in-out mb-5">
             <NavLink to="/" className={`${mobileText("/")} block`}>
               <li className="p-3 hover:bg-gray-700 transition-colors">Home</li>
             </NavLink>

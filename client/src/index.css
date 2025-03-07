@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+html, body, #root {
+    min-height: 100vh;
+    height: auto;
+    background: black; /* Keeps it dark in case gradient fails */
+    background-image: linear-gradient(to bottom right, #0f0f0f, #181818, #232323);
+    background-attachment: fixed; /* Ensures it doesn’t move on scroll */
+    background-size: cover; /* Ensures full coverage */
+  }
